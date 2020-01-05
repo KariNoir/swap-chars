@@ -8,10 +8,12 @@ public class SwapChars {
 
 	public static String swap2(String str) {
 		// TODO Auto-generated method stub
-		char char1 = str.charAt(0);
-		char char2 = str.charAt(1);
 		
-		return "" + char2 + char1; //putting "" tell computer to 
+		int strLength = str.length();
+		char lastCharacter = str.charAt(strLength - 1);
+		char secondLastCharacter = str.charAt(strLength - 2);
+		
+		return "" + lastCharacter + secondLastCharacter; //putting "" tells computer to cancatinate the letters
 	}
 
 }
